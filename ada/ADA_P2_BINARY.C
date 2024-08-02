@@ -45,7 +45,7 @@ else
 {
 printf("the item %d is found at pos %d",item,flag+1);
 }
-printf("\ntime taken=%f",(end-start/CLK_TCK));
+printf("\ntime taken=%f",(end-start)/CLK_TCK);
 getch();
 }
 
