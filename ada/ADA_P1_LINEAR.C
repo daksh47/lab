@@ -42,7 +42,7 @@ else
 {
 printf("the value %d is found at pos %d",key,pos+1);
 }
-printf("the time taken is=%f",(end-start/CLK_TCK));
+printf("the time taken is=%f",(end-start)/CLK_TCK);
 getch();
 }
 
