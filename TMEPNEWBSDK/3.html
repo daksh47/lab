@@ -1,0 +1,26 @@
+# removed  " alt='My Image.' "
+# added    " height=100 and width=100"
+<html> 
+<head> 
+<title> Basic Animation </title> 
+<style> 
+#layer1{position:absolute; top:50px;left:50px;} 
+#layer2{position:absolute; top:50px;left:400px;} 
+#layer3{position:absolute; top:50px;left:800px;} 
+</style> 
+<script type="text/javascript"> 
+function moveImage(layer) 
+{ 
+var top = window.prompt("Enter top value"); 
+var left = window.prompt("Enter left value"); 
+document.getElementById(layer).style.top =top+'px'; 
+document.getElementById(layer).style.left =left+'px'; 
+} 
+</script> 
+</head> 
+<body>
+<div id="layer1"><img src="ball.jpg" onclick="moveImage('layer1')" height=100 width=100 /></div> 
+<div id="layer2"><img src="ball.jpg" onclick="moveImage('layer2')" height=100 width=100 /></div> 
+<div id="layer3"><img src="ball.jpg" onclick="moveImage('layer3')" height=100 width=100 alt="My Image."/></div>
+</body> 
+</html> 

@@ -1,0 +1,28 @@
+<html>
+
+<script>
+
+function eval1()
+{
+var e=document.getElementById("abc").value;
+try
+{
+s=eval(e)
+document.getElementById("exam").textContent=s;
+}
+catch(e)
+{
+document.getElementById("exam").textContent="wrongd";
+}
+}	
+
+</script>
+
+<body>
+
+<input type="text" id="abc"/>
+<input type="button" value="check" onclick="eval1()"/>
+<p id="exam"/>
+
+</body>
+</html>
