@@ -1,0 +1,64 @@
+<html> 
+<head> 
+<title>Student Information Form</title> 
+<script> 
+function calculateResult() { 
+// Get input values from the form 
+var   
+math=parseFloat(document.getElementById('math').value); 
+var science=parseFloat(document.getElementById('science').value); 
+var english=parseFloat(document.getElementById('english').value); 
+// Calculate Total marks and Average 
+var totalMarks=math+science+english; 
+var average=totalMarks/3; 
+var result=(math>=35 && science>=35 && english>=35)?"Pass":"Fail"; 
+// Calculate Grade based on the average marks 
+var grade; 
+if(average>=90) 
+{ 
+grade='A+'; 
+} 
+else if(average>=80) 
+{ 
+grade='A'; 
+} 
+else if(average>=70) 
+{ 
+grade='B'; 
+} 
+else if(average>=60) 
+{ 
+grade='C'; 
+} 
+else if(average>=50) 
+{ 
+grade='D'; 
+} 
+else 
+{ 
+grade='F'; 
+} 
+// Display the calculated values 
+document.getElementById('totalMarks').value=totalMarks.toFixed(2); 
+document.getElementById('average').value=average.toFixed(2); 
+document.getElementById('result').value=result; 
+document.getElementById('grade').value=grade; 
+} 
+</script> 
+</head> 
+<body> 
+<h2>Student Information</h2> 
+<form> 
+Math: <input type="number" id="math"><br><br> 
+Science: <input type="number" id="science"><br><br> 
+English: <input type="number" id="english"><br><br> 
+<input type="button" value="Calculate" onclick="calculateResult()"> 
+</form> 
+<br> 
+<h2>Result Details</h2> 
+Total Marks: <input type="text" id="totalMarks" readonly><br><br> 
+Average: <input type="text" id="average" readonly><br><br> 
+Result: <input type="text" id="result" readonly><br><br> 
+Grade: <input type="text" id="grade" readonly> 
+</body> 
+</html>
