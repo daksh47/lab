@@ -5,8 +5,7 @@ benched download the above excel sheet ( prgs.xlsx )
 	- the table to the left of the blank space of column G is operations performed according to each program
 	- delete the rest parts expect your program
 
-copy the program you want or download the prg6-9.ipynb and then in jupyter notebook navigate ( where you downloaded it ) and the open the file
-	- delete the rest parts expect your program number
+oprn prg6-9.ipynb and copy the program you want or download the prg6-9.ipynb and then in jupyter notebook navigate ( where you downloaded it ) and the open the file, and then delete the rest parts expect your program number
 
 PROGRAM 1
 
