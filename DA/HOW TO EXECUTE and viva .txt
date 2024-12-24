@@ -1,3 +1,5 @@
+if your function for example eomonth() is not found in program 5 search for it in other programs ( this case it is present in program 3 )
+
 benched download the above excel sheet ( prgs.xlsx ) 
 	- the table to the left of the blank space of column G is original dataset
 	- the table to the left of the blank space of column G is operations performed according to each program
